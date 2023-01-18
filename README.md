@@ -17,3 +17,9 @@ Written in Python.
 1. Patient address
 2. Medical Record Numbers
 
+The variable name is 'x_variable'.
+
+'''
+def function(x):
+    print(x)
+    '''
