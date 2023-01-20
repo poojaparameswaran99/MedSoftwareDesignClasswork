@@ -62,5 +62,12 @@ def LDL_analysis(LDL_int):
     else:
         ldlanswer = "Very High!"
         
+def total_cholesterol(cholest_int):
+    if cholest_int < 200:
+        cholanswer = "Normal"
+    elif 200 <= cholest_int <239:
+        cholanswer = "Borderline High"
+    else:
+        cholanswer = "High"
 
 interface()
