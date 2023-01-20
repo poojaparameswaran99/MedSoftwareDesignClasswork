@@ -13,12 +13,17 @@ def interface():
         print("Options:")
         print("1 - HDL")
         print("2 - LDL")
+        print("3 - Cholesterol")
         print("9 - Quit")
-        choice = input("Select an option:")
+        choice = input("Select an option: ")
         if choice == "9":
             keep_running = False
         elif choice == "1":
             HDL_driver()
+        elif choice = "2":
+            LDL_driver()
+        elif choice = "3":
+            chol_driver():
         print("Program ending")
         
 
@@ -52,6 +57,7 @@ def HDL_output(HDL_value, HDL_analy):
 
 # Working on LDL
 
+def LDL
 def LDL_analysis(LDL_int):
     if LDL_int < 130:
         ldlanswer = "Normal"
@@ -61,7 +67,8 @@ def LDL_analysis(LDL_int):
         ldlanswer = "High"
     else:
         ldlanswer = "Very High!"
-        
+
+# Analyzing Cholesterol levels
 def total_cholesterol(cholest_int):
     if cholest_int < 200:
         cholanswer = "Normal"
