@@ -22,6 +22,12 @@ def interface():
         
 
 
+        
+def HDL_driver():
+    HDL_in = HDL_input()
+    HDL_analy = HDL_analysis(HDL_input)
+    HDL_output(HDL_in, HDL_analy)
+    
 
 def HDL_analysis(HDL_int):
     if HDL_int >= 60:
@@ -33,7 +39,7 @@ def HDL_analysis(HDL_int):
     return answer
 
 
-def HDL_input():
+def HDL_input():a
     HDL_value = input("Enter the HDL result:")
     HDL_value= int(HDL_value)
     return HDL_value
