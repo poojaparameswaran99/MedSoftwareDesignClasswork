@@ -57,7 +57,6 @@ def HDL_output(HDL_value, HDL_analy):
 
 # Working on LDL
 
-def LDL
 def LDL_analysis(LDL_int):
     if LDL_int < 130:
         ldlanswer = "Normal"
@@ -67,6 +66,11 @@ def LDL_analysis(LDL_int):
         ldlanswer = "High"
     else:
         ldlanswer = "Very High!"
+
+def LDL_input():
+    LDL_val = input("Enter LDL result: ")
+    LDL_val = int(LDL_val)
+    return LDL_val
 
 # Analyzing Cholesterol levels
 def total_cholesterol(cholest_int):
