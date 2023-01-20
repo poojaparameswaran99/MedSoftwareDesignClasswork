@@ -12,6 +12,7 @@ def interface():
     while keep_running:
         print("Options:")
         print("1 - HDL")
+        print("2 - LDL")
         print("9 - Quit")
         choice = input("Select an option:")
         if choice == "9":
@@ -47,5 +48,9 @@ def HDL_input():
 def HDL_output(HDL_value, HDL_analy):
     print("The HDL result of {} is considered {}".format(HDL_value, HDL_analy))
     return
+
+
+# Working on LDL
+
 
 interface()
