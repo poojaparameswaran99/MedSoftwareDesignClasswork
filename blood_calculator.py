@@ -52,5 +52,15 @@ def HDL_output(HDL_value, HDL_analy):
 
 # Working on LDL
 
+def LDL_analysis(LDL_int):
+    if LDL_int < 130:
+        ldlanswer = "Normal"
+    elif 130 <= LDL_int <= 159:
+        ldlanswer = "Borderline High"
+    elif 160 <= LDL_int <= 189:
+        ldlanswer = "High"
+    else:
+        ldlanswer = "Very High!"
+        
 
 interface()
