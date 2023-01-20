@@ -38,6 +38,8 @@ def HDL_input():
     HDL_value= int(HDL_value)
     return HDL_value
 
-
+def HDL_output(HDL_value, HDL_analy):
+    print("The HDL result of {} is considered {}".format(HDL_value, HDL_analy))
+    return
 
 interface()
