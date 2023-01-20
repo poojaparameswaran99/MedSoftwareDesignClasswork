@@ -66,12 +66,17 @@ def LDL_analysis(LDL_int):
         ldlanswer = "High"
     else:
         ldlanswer = "Very High!"
+    return ldlanswer
 
 def LDL_input():
     LDL_val = input("Enter LDL result: ")
     LDL_val = int(LDL_val)
     return LDL_val
 
+def LDL_output(LDL_val, ldlanswer):
+    print("The LDL result {} is considered {}".format(LDL_val, ldlanswer))
+    return
+    
 # Analyzing Cholesterol levels
 def total_cholesterol(cholest_int):
     if cholest_int < 200:
