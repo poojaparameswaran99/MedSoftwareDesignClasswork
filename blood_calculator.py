@@ -20,11 +20,11 @@ def interface():
             keep_running = False
         elif choice == "1":
             HDL_driver()
-        elif choice = "2":
+        elif choice == "2":
             LDL_driver()
-        elif choice = "3":
-            chol_driver():
-        print("Program ending")
+        # elif choice == "3":
+        #     chol_driver():
+        print("Program ending \n" )
         
 
 
@@ -68,6 +68,11 @@ def LDL_analysis(LDL_int):
         ldlanswer = "Very High!"
     return ldlanswer
 
+def LDL_driver():
+    LDL_in = LDL_input()
+    LDL_analy = LDL_analysis(LDL_in)
+    LDL_output(LDL_in, LDL_analy)
+    
 def LDL_input():
     LDL_val = input("Enter LDL result: ")
     LDL_val = int(LDL_val)
@@ -85,5 +90,6 @@ def total_cholesterol(cholest_int):
         cholanswer = "Borderline High"
     else:
         cholanswer = "High"
+    return cholanswer
 
 interface()
