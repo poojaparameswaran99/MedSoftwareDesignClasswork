@@ -22,8 +22,8 @@ def interface():
             HDL_driver()
         elif choice == "2":
             LDL_driver()
-        # elif choice == "3":
-        #     chol_driver():
+        elif choice == "3":
+            chol_driver()
         print("Program ending \n" )
         
 
@@ -93,6 +93,12 @@ def total_cholesterol(cholest_int):
     return cholanswer
 
 
+def chol_driver():
+    chol_in = cholesterol_input()
+    chol_analy = total_cholesterol(chol_in)
+    Chol_output(chol_in, chol_analy)
+    
+    
 def cholesterol_input():
     chol_val = input("Enter Cholesterol result: ")
     chol_val = int(chol_val)
