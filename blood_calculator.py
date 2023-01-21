@@ -98,4 +98,8 @@ def cholesterol_input():
     chol_val = int(chol_val)
     return chol_val
 
+def Chol_output(chol_val, cholanswer):
+    print("The LDL result {} is considered {}".format(chol_val, cholanswer))
+    return 
+
 interface()
