@@ -92,4 +92,10 @@ def total_cholesterol(cholest_int):
         cholanswer = "High"
     return cholanswer
 
+
+def cholesterol_input():
+    chol_val = input("Enter Cholesterol result: ")
+    chol_val = int(chol_val)
+    return chol_val
+
 interface()
