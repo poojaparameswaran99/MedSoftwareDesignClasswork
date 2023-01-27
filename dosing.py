@@ -52,6 +52,7 @@ def returnInfoTouser(weight, dosage_mg_first_day):
 
 
 
+
 if __name__ == '__main__':
     diag = listDiagnosis()
     weight = whatWeight()
