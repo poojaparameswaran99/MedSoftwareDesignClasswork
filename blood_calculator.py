@@ -65,7 +65,7 @@ def LDL_analysis(LDL_int):
     elif 160 <= LDL_int <= 189:
         ldlanswer = "High"
     else:
-        ldlanswer = "Very High!"
+        ldlanswer = "Very High"
     return ldlanswer
 
 
@@ -114,4 +114,5 @@ def Chol_output(chol_val, cholanswer):
     return
 
 
-interface()
+if __name__ == "__main__":
+    interface()
