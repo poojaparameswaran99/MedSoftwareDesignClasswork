@@ -10,7 +10,8 @@ import pytest
 
 @pytest.mark.parametrize("coor1, coor2, x3, expected",
                          [((1,5), (4,10), 3, 3),
-                          ((10,10), (4,1), 7, 7)])
+                          ((10,10), (4,1), 7, 7),
+                          ((2,2), (6,6), 7, False)])
 def test_checkNewX(coor1, coor2,x3, expected):
     from coordinatePlan import checkNewX
     
@@ -21,8 +22,8 @@ def test_checkNewX(coor1, coor2,x3, expected):
     
     
 @pytest.mark.parametrize("coor1, coor2, expected",
-                         [((-1,5), (3,7), (1/2,2), (11/2))),
-                          ((1,5), (4,10), (5/3, 2), (10/3,2))),
+                         [((-1,5), (3,7), (1/2, 11/2)),
+                          ((1,5), (4,10), (5/3, 10/3)),
                           ((10,10), (5,5), (1, 0))])
 def test_findLine(coor1, coor2, expected):
     from coordinatePlan import findLine
@@ -35,8 +36,8 @@ def test_findLine(coor1, coor2, expected):
     
     
 @pytest.mark.parametrize("slope, yInt, x3, expected",
-                         [((1/2,2), (11/2, 3), 7),
-                          ((5/3, 2), (10/3, 3) , 8.34)]
+                         [(1/2, 11/2, 2, 6.5 ),
+                          (5/3, 10/3 , 3, 8.3333333333333)]
                          )
 def test_findYcoordinate(slope, yInt, x3, expected):
     from coordinatePlan import findYcoordinate
