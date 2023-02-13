@@ -15,7 +15,7 @@ def create_patient_entry(patient_name, patient_mrn, patient_age):
     patientdict = {key: None for key in keyList}
     for i, val in enumerate(new_patient):
         patientdict[keyList[i]] = val
-    print(patientdict)
+    # print(patientdict)
     return patientdict
 
 
@@ -36,9 +36,7 @@ def main_driver():
     db = {}
     db [1] = (create_patient_entry("Ann Ables", 1, 34))
     db [2] = (create_patient_entry("Bob Boyles", 2, 45))
-    db [3] = (create_patient_entry("Chris Chou", 3, 52))
-    print_database(db)
-    
+    db [3] = (create_patient_entry("Chris Chou", 3, 52))    
     add_test_to_patient(db, 1, "HDL", 120)
     add_test_to_patient(db, 2, "LDL", 100)
     add_test_to_patient(db, 3, "HDL", 99)
