@@ -81,6 +81,13 @@ def add_test_to_patient(db, mrn_to_find, test_name, test_value):
     return
 
 
+def get_test_value_from_test_list(test_list, test_name):
+    for test in test_list:
+        if test[0] == test_name:
+            return test[1]
+    return False
+
+
 if __name__ == "__main__":
     main_driver()
     
