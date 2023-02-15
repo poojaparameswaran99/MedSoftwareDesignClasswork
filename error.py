@@ -8,13 +8,14 @@ Created on Wed Feb 15 12:45:54 2023
 
 import math
 
+
 def calc_square_root(n):
     try:
         from my_calculator import sqrt
-   except ModuleNotFoundError:
-       from math import sqrt
-   answer = sqrt(n)
-   return answer
+    except ModuleNotFoundError:
+        from math import sqrt
+    answer = sqrt(n)
+    return answer
 
 
 def squareroot(lst):
