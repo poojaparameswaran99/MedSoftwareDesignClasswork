@@ -9,13 +9,12 @@ Created on Wed Feb 15 12:45:54 2023
 import math
 
 def calc_square_root(n):
-   try:
-       from my_calculator import sqrt
+    try:
+        from my_calculator import sqrt
    except ModuleNotFoundError:
        from math import sqrt
    answer = sqrt(n)
    return answer
-
 
 
 def squareroot(lst):
@@ -29,14 +28,11 @@ def squareroot(lst):
         newlist.append(val)
     return newlist
 
+
 def main():
     print(calc_square_root(3))
     print(squareroot([1, -1, 2, -2, 3, -3]))
-    
-    
+
+
 if __name__ == "__main__":
     main()
-    
-    
-    
-    
