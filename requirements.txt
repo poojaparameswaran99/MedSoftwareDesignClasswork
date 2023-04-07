@@ -2,3 +2,11 @@ jupyter
 pytest
 pytest-pycodestyle
 requests
+flask
+pymodm
+Dnspython
+Pillow
+matplotlib
+io
+base64
+tkinter
